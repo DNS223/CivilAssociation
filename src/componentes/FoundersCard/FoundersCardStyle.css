@@ -1,0 +1,19 @@
+.FounderCardContainer{
+    width: 400px;
+    height: 370px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 32px;
+}
+.ImageContainer{
+    width: 400px;
+    height: 300px;
+    background-color: white;
+    border-radius: 20px;
+}
+.NombreTxt{
+    width: 341px;
+    text-align: center;
+    font-weight: 700;
+}

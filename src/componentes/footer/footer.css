@@ -1,0 +1,9 @@
+.footerContainer{
+    width: 100vw;
+    height: 50px;
+    background-color: #005E58;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
