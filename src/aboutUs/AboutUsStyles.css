@@ -1,0 +1,151 @@
+.aboutUsSection{
+    position: relative;
+    height: 2700px; 
+    
+}
+.HeaderAUS{
+    height: 150px;
+    background-color: #1D2430;
+    padding-left: 50px;
+    padding-top: 10px;
+    box-sizing: border-box;
+    margin-bottom:130px ;
+    color: white;
+
+    }
+.TitleAUS{
+    font-size: 48px;
+    margin: 0;
+}
+.SubtitleAUS{
+    font-size: 24px;
+    margin: 0;
+    margin-top: 10px;
+}
+.BodyAUS{
+    position: absolute;
+    top: 150px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+.FirstSectionBody{
+    display: flex;
+    align-items: center;
+    padding-left: 50px; 
+    & img{
+        width: 514px;
+    }
+}
+.ParrfContainer{
+    margin-right: 80px;
+}
+.SecondParf{
+    margin-top: 60px;
+}
+.TitleBod{
+    font-size: 50px;
+    margin: 0;
+}
+.txtBod{
+    font-size: 20px;
+    width: 1120px;
+    margin: 15px 0px 0px 0px;
+    
+}
+.SecondSection{
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+  
+}
+.TtileSecondSecBod{
+    font-size: 80px;
+    font-weight: 700;
+    margin: 0;
+    color: #005E58;
+}
+.SecondSectBody{
+    width: 1200px;
+    display: flex;
+    & img{
+        width: 42px;
+        height: 570px;
+    }
+}
+.SecondParrfDate{
+    font-size: 64px;
+    font-weight: 700;
+    margin: 0;
+    color: #2CC991;
+}
+.SecondParrfTxt{
+    margin: 0;
+    font-size: 28px;
+}
+.Founders{
+    margin-top: 50px;
+    width: 100%;
+    height: 700px;
+    background-color: #46A7A6;
+    position: relative;
+    padding: 50px 70px 50px 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.FoundersTitle{
+    font-size: 85px;
+    margin: 0;
+    color: #B4FFD2;
+    font-weight: 600;
+}
+.FoundersCardContainer{
+    display: flex;
+    width: 1600px;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+.UnirseSection{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.UnirseContainer{
+    width: 1400px;
+    height: 400px;
+    background-color: #1D2430;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.UnirseTitle{
+    font-size: 64px;
+    margin: 0;
+    color: #95F9D8;
+   
+}
+.UnirseTxt{
+    font-size: 40px;
+    color: #DAFFD6;
+
+}
+.btnDonar{
+    width: 230px;
+    height: 75px;
+    background-color: #7ADFDB;
+    border-radius: 37px;
+    color: #020305;
+    font-size: 28px;
+    font-weight: 600;
+}
