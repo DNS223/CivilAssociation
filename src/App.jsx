@@ -1,17 +1,20 @@
 import './App.css';
 import CardPrincipal from './componentes/cardPrincipal/CardPrincipal';
 import CardSiguiente from './componentes/CardSiguiente/CardSiguiente';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Footer from './componentes/footer/Footer';
 import CardServicio from './componentes/CardServicio/CardServicio';
 
 
 function App() {
-  const imagesSlider = ["slider1.jpeg", "slider2.png", "slider3.png", "slider4.png","slider1.jpeg" ]
+  
+  const imagesSlider = ["slider1.webp", "slider2.webp", "slider3.webp", "slider4.webp","slider1.webp" ]
   const fondosSlider=["fondoSlider1.png", "fondoSlider2.png", "fondoSlider3.png", "fondoSlider4.png"]
-  const txtSlider = ["Bienvenidos a la Asociación Civil para la Inclusión Social."]
+  const txtSlider = ["Bienvenidos a la Asociación Civil para la Inclusión Social.", "Donde transformamos vidas, forjando inclusión",
+                     "Construyendo puentes hacia la igualdad","Se parte del cambio: únete a nuestra causa"]
   const subTxtSlider = ["Trabajamos por un futuro más justo e inclusivo para todos."]
   const [caracterValue, setCaracterValue] = useState(0);
+  
   console.log(imagesSlider.length)
   const changeImage =(imageNumber) => {
     if(imageNumber < imagesSlider.length-1){
@@ -21,6 +24,16 @@ function App() {
     }
     
   }
+  const preloadImages = (images) => {
+    images.forEach((image) => {
+      const img = new Image();
+      img.src = image;
+    });
+  };
+  
+  useEffect(() => {
+    preloadImages([...imagesSlider, ...fondosSlider]);
+  }, []);
   return (
     <div className="App">
 
@@ -28,11 +41,11 @@ function App() {
         <img src={fondosSlider[caracterValue]} alt="" className='imgBackground'/>
 
         <div className='containerLeft'>
-        <h1 className='txtBienvenido'>{txtSlider[0]}</h1>
+        <h1 className='txtBienvenido'>{txtSlider[caracterValue]}</h1>
         <p className='txtSub'>{subTxtSlider[0]}</p>
-        <button className='btnDonar'>Donar ahora</button>
-        </div>
         
+        </div>
+        <a className='btnDonarInicio'>Donar ahora</a>
         <div className='containerRight'>
           <CardPrincipal image={imagesSlider[caracterValue]}/>
           <CardSiguiente image={imagesSlider[caracterValue+1]} onClick={()=> changeImage(caracterValue+1)}/>
