@@ -1,13 +1,7 @@
-import { useEffect, useState } from "react"
 import "./CardPrincipal.css"
-export default function CardPrincipal ({image,startAnimate}){
-    const [animated, setAnimated]=useState(false)
-    useEffect(()=>{
-        console.log("Change")
-        setAnimated(!animated)
-    },[startAnimate])
+export default function CardPrincipal ({image}){
     return(
-        <div className={`CardPrincipalContainer ${animated ? 'slideout':'slideout2'}`}>
+        <div className="CardPrincipalContainer">
             <img src={image} alt="" />
         </div>
     )

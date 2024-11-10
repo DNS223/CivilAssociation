@@ -1,13 +1,7 @@
-import { useEffect, useState } from "react"
 import "./cardSiguiente.css"
-export default function CardSiguiente ({image, onClick, startAnimate}){
-    const [animated, setAnimated]=useState(false)
-    useEffect(()=>{
-        console.log("Change")
-        setAnimated(!animated)
-    },[startAnimate])
+export default function CardSiguiente ({image, onClick}){
     return(
-        <div className={`CardSiguienteContainer ${animated ? 'slideIn':'slideIn2'}`} onClick={onClick}>
+        <div className="CardSiguienteContainer" onClick={onClick}>
             <img src={image} alt="" />
         </div>
     )
