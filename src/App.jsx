@@ -9,27 +9,37 @@ import CardServicio from './componentes/CardServicio/CardServicio';
 function App() {
   
   const imagesSlider = ["slider1.webp", "slider2.webp", "slider3.webp", "slider4.webp","slider1.webp" ]
-  const fondosSlider=["fondoSlider1.png", "fondoSlider2.png", "fondoSlider3.png", "fondoSlider4.png"]
+  const fondosSlider=["fondoSlider1.webp", "fondoSlider2.webp", "fondoSlider3.webp", "fondoSlider4.webp"]
   const txtSlider = ["Bienvenidos a la Asociación Civil para la Inclusión Social.", "Donde transformamos vidas, forjando inclusión",
                      "Construyendo puentes hacia la igualdad","Se parte del cambio: únete a nuestra causa"]
   const subTxtSlider = ["Trabajamos por un futuro más justo e inclusivo para todos."]
   const [caracterValue, setCaracterValue] = useState(0);
+  const [startAnimate, setStartAnimate] = useState(false)
   
-  console.log(imagesSlider.length)
-  const changeImage =(imageNumber) => {
-    if(imageNumber < imagesSlider.length-1){
-      setCaracterValue(imageNumber)
-    }else{
-      setCaracterValue(0)
-    }
-    
-  }
   const preloadImages = (images) => {
     images.forEach((image) => {
       const img = new Image();
       img.src = image;
     });
   };
+
+  const changeImage =(imageNumber) => {
+    if(imageNumber < imagesSlider.length-1){
+      setStartAnimate(!startAnimate)
+      setTimeout(()=>{
+        setCaracterValue(imageNumber)
+      },1000)
+      
+    }else{
+      setStartAnimate(!startAnimate)
+      setTimeout(()=>{
+        setCaracterValue(0)
+      },1000)
+      
+    }
+    
+  }
+  
   
   useEffect(() => {
     preloadImages([...imagesSlider, ...fondosSlider]);
@@ -47,8 +57,8 @@ function App() {
         </div>
         <a className='btnDonarInicio'>Donar ahora</a>
         <div className='containerRight'>
-          <CardPrincipal image={imagesSlider[caracterValue]}/>
-          <CardSiguiente image={imagesSlider[caracterValue+1]} onClick={()=> changeImage(caracterValue+1)}/>
+          <CardPrincipal image={imagesSlider[caracterValue]} startAnimate={startAnimate}/>
+          <CardSiguiente image={imagesSlider[caracterValue+1]} onClick={()=> changeImage(caracterValue+1)} startAnimate={startAnimate}/>
         </div>
       </div>
 
