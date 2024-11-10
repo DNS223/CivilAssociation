@@ -15,14 +15,23 @@ function App() {
                      "Construyendo puentes hacia la igualdad","Se parte del cambio: únete a nuestra causa"]
   const subTxtSlider = ["Trabajamos por un futuro más justo e inclusivo para todos."]
   const [caracterValue, setCaracterValue] = useState(0);
-  
+  const [animate, setAnimate] = useState(false);
+
   console.log(imagesSlider.length)
-  
-  const changeImage =(imageNumber) => {
+
+  const changeImage = async(imageNumber) => {
     if(imageNumber < imagesSlider.length-1){
-      setCaracterValue(imageNumber)
+      setAnimate(true)
+      setTimeout(() => {
+        setCaracterValue(imageNumber)
+        setAnimate(false); // Reactiva la animación después de cambiar la imagen
+      },800);
     }else{
-      setCaracterValue(0)
+      setAnimate(true)
+      setTimeout(() => {
+        setCaracterValue(0)
+        setAnimate(false); // Reactiva la animación después de cambiar la imagen
+      },800);
     }
     
   }
@@ -49,11 +58,13 @@ function App() {
         </div>
         <a className='btnDonarInicio'>Donar ahora</a>
         <div className='containerRight'>
-          <div className='CardPrincipal'>
+          <div className={animate ? "slideOut":'slideOut2'}>
             <CardPrincipal image={imagesSlider[caracterValue]}/>
           </div>
           
+          <div className={animate ? 'slideIn' : 'slideIn2'}>
           <CardSiguiente image={imagesSlider[caracterValue+1]} onClick={()=> changeImage(caracterValue+1)}/>
+          </div>
         </div>
       </div>
 

@@ -178,3 +178,51 @@ align-items: center;
     bottom: 0;
     left: 0;
 }
+.slideOut{
+    
+    position: relative;
+    animation-name: slideout;
+    animation-duration: 1s;
+}
+.slideIn .CardSiguienteContainer{
+    position: relative;
+    animation-name: slideIn;
+    animation-duration: 1s;
+}
+.slideIn2 .CardSiguienteContainer{
+    position: relative;
+    animation-name: slideIn2;
+    animation-duration: 0.8s;
+}
+@keyframes slideout {
+    from {
+     right: 0;
+     opacity: 1;
+    }
+    to {
+     right: 100px;
+     opacity: 0;
+    }
+  }
+@keyframes slideIn {
+    from {
+     width: 192px;
+     height: 227px;
+     right: 0;
+    }
+    to {
+     width: 250px;
+     height: 330px;
+     right: 255px;
+    }
+  }
+  @keyframes slideIn2 {
+    from {
+     opacity: 0;
+     right: -200px;
+    }
+    to {
+     opacity: 1;
+     right: 0px;
+    }
+  }
