@@ -4,6 +4,7 @@ import CardSiguiente from './componentes/CardSiguiente/CardSiguiente';
 import { useEffect, useState } from 'react';
 import Footer from './componentes/footer/Footer';
 import CardServicio from './componentes/CardServicio/CardServicio';
+import ServiciosSection1 from './componentes/ServiciosSection/ServiciosSection1';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
   const [caracterValue, setCaracterValue] = useState(0);
   
   console.log(imagesSlider.length)
+  
   const changeImage =(imageNumber) => {
     if(imageNumber < imagesSlider.length-1){
       setCaracterValue(imageNumber)
@@ -47,7 +49,10 @@ function App() {
         </div>
         <a className='btnDonarInicio'>Donar ahora</a>
         <div className='containerRight'>
-          <CardPrincipal image={imagesSlider[caracterValue]}/>
+          <div className='CardPrincipal'>
+            <CardPrincipal image={imagesSlider[caracterValue]}/>
+          </div>
+          
           <CardSiguiente image={imagesSlider[caracterValue+1]} onClick={()=> changeImage(caracterValue+1)}/>
         </div>
       </div>
@@ -58,40 +63,25 @@ function App() {
         <CardServicio image="./logoCard3.png" titulo="Eventos" parrafo="Participa en nuestras actividades"/>
       </div>
       {/* Servicios begin */}
-      <div className='ServiciosSection'>
-          <div className='FrstSS'>
+      <div className='FrstSS'>
             <p className='TitleSS'>Nuestros Servicios</p>
             <p className='txtSS'>En nuestra asociación, creemos firmemente que la inclusión es el camino hacia una sociedad 
               más justa y equitativa.Nos dedicamos a derribar barreras y a construir puentes que conecten 
               a todas las personas, sin importar sus circunstancias o antecedentes. Nuestros servicios están 
               diseñadospara empoderar, proteger y mejorar la calidad de vida de quienes más lo necesitan.</p>
           </div>
-          <div className='SSContent'>
-            <div className='SSContentR'>
-              <img src="/ServicesLogo.png" alt="" className='ServicesLogo'/>
-              <p className='TitleSSContent'>Asesoría Jurídica</p>
-              <p className='SubtitleSSContent'>Ofrecemos orientación legal para proteger los derechos de personas en situación de vulnerabilidad.</p>
-              <div className='txtMain'>
-                <p className='titulosMain'>Entre las actividades que realizamos son:</p>
-                  <li>Orientación legal en temas de derechos humanos, derecho laboral, familiar y civil.</li>
-                  <li>Acompañamiento en trámites legales.</li>
-                  <li>Educación jurídica para empoderar a la comunidad en la defensa de sus derechos.</li>
+      <ServiciosSection1 icon="/ServicesLogo.png" TitleSSContent="Asesoría Jurídica" 
+      SubtitleSSContent="Ofrecemos orientación legal para proteger los derechos de personas en situación de vulnerabilidad."
+      ContenidoPrincipal1={true} imgServiceSection="/ImgServicesL.jfif"/>
 
-                  <p className='subtitle2Main'>¿Qué estrategias se utilizan?</p>
-                  <li>Colaboración con abogados voluntarios y estudiantes de derecho.</li>
-                  <li>Charlas informativas para la comunidad sobre sus derechos y procedimientos legales básicos.</li>
-                  <li>Uso de espacios comunitarios para acercar los servicios a las personas que lo requieren.</li>
-                
-              </div>
-            </div>
-            <div className='SSContentL'>
-              <img src="/ImgServicesL.jfif" alt="" className='ImgServicesL'/>
-            </div>
-            <div className='imgContentSS'>
 
-            </div>
-          </div>
-      </div>
+      <ServiciosSection1 icon="/ServiceHealthLogo.png" TitleSSContent="SERVICIOS DE SALUD"
+      SubtitleSSContent="Brindamos atención médica gratuita a personas que no tienen fácil acceso a servicios de salud."
+      ContenidoPrincipal2={true} imgServiceSection="/ServiceHealthImg.jpg"/>
+
+      <ServiciosSection1 icon="/ServiceDespensasLogo.png" TitleSSContent="ENTREGA DE DESPENSAS"
+      SubtitleSSContent="Proporcionamos ayuda alimentaria a familias de escasos recursos, contribuyendo a mejorar su seguridad alimentaria."
+      ContenidoPrincipal3={true} imgServiceSection="/ServiceDespensasImg.png"/>
       {/* Servicios end */}
       <div className='footer'>
         <Footer/>
