@@ -1,5 +1,5 @@
 .HeaderContainer{
-    width: calc(100vw - 15px);
+    width:100vw;
     height: 90px;
     background-color: #009589;
     display: flex;
