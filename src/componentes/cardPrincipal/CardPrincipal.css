@@ -9,3 +9,10 @@ img{
     border-radius: 20px;
     object-fit: cover;
 }
+@media(max-width:720px){
+    .CardPrincipalContainer{
+        width: 130px ;
+        height: 200px ;
+    }
+   
+}

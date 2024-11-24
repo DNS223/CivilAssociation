@@ -2,7 +2,6 @@ import FounderCard from "../componentes/FoundersCard/FoundersCard"
 import './AboutUsStyles.css'
 export default function AboutUs(){
     return(
-        <div className="aboutUsPageContainer">
 <div className="aboutUsSection">
         <div className='HeaderAUS'>
           <p className='TitleAUS'>¿Quiénes somos?</p>
@@ -34,7 +33,7 @@ export default function AboutUs(){
 
           </div>
           {/* ParrfContainer End */}
-          <img src="./LogoParrf.jpeg" alt="" />
+          <img src="./LogoParrf.jpeg" alt="" className="imgLogoAboutUs"/>
           </div>
           {/* EndFirstSection */}
 
@@ -82,7 +81,6 @@ export default function AboutUs(){
           </div>
 
         </div>
-      </div>
-        </div>
+</div>
     )
 }

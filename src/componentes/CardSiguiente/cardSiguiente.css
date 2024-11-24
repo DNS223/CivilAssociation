@@ -10,3 +10,9 @@ img{
     border-radius: 20px;
     object-fit: cover;
 }
+@media(max-width:720px){
+    .CardSiguienteContainer {
+        width: 100px ;
+        height: 130px ;
+    }
+}

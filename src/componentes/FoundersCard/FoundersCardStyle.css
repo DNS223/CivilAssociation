@@ -1,5 +1,5 @@
 .FounderCardContainer{
-    width: 400px;
+    width: 25%;
     height: 370px;
     display: flex;
     flex-direction: column;
@@ -7,8 +7,8 @@
     font-size: 32px;
 }
 .ImageContainer{
-    width: 400px;
-    height: 300px;
+    width: 70%;
+    height: 60%;
     background-color: white;
     border-radius: 20px;
 }
@@ -16,4 +16,10 @@
     width: 341px;
     text-align: center;
     font-weight: 700;
+}
+@media(max-width:720px){
+    .FounderCardContainer{
+        height: 200px;
+    }
+   
 }

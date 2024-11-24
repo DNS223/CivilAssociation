@@ -77,7 +77,7 @@ function App() {
       <div className='FrstSS'>
             <p className='TitleSS'>Nuestros Servicios</p>
             <p className='txtSS'>En nuestra asociación, creemos firmemente que la inclusión es el camino hacia una sociedad 
-              más justa y equitativa.Nos dedicamos a derribar barreras y a construir puentes que conecten 
+              más justa y equitativa. Nos dedicamos a derribar barreras y a construir puentes que conecten 
               a todas las personas, sin importar sus circunstancias o antecedentes. Nuestros servicios están 
               diseñadospara empoderar, proteger y mejorar la calidad de vida de quienes más lo necesitan.</p>
           </div>
