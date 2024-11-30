@@ -315,9 +315,13 @@ align-items: center;
     .parrafo{
         width: 110px;
     }
+    .SSContentL{
+        width: 90%;
+    }
     .ImgServicesL{
-        width: 140px;
+        width: 100%;
         height: 180px;
+        margin-top: 30px;
     }
     .CardServicioContainer{
         width: 110px;
@@ -342,6 +346,12 @@ align-items: center;
     }
     .SSContent{
         align-items: flex-end;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .SSContentR{
+        width: 100%;
     }
     .txtSS{
         position: relative;
