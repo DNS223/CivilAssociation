@@ -17,7 +17,7 @@ function App() {
   const [caracterValue, setCaracterValue] = useState(0);
   const [animate, setAnimate] = useState(false);
 
-  console.log(imagesSlider.length)
+ 
 
   const changeImage = async(imageNumber) => {
     if(imageNumber < imagesSlider.length-1){

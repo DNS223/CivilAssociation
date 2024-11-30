@@ -113,7 +113,7 @@
 }
 .FoundersCardContainer{
     display: flex;
-    width: 100%;
+    width: 80vw;
     justify-content: space-between;
     margin-top: 70px;
 }
@@ -209,6 +209,42 @@
     width: 90%;
 }
 .SubtitleAUS{
-    width: 600px;
+    width: 90%;
 }
+}
+
+@media (max-width: 450px){
+    .FirstSectionBody{
+        display: block;
+    }
+    .imgLogoAboutUs{
+        margin-top: 20px;
+    }
+    .TtileSecondSecBod{
+        font-size: 30px;
+    }
+    .SecondParrfDate {
+        font-size: 20px;
+    }
+    .SecondParrfTxt {
+        width: 75%;
+        font-size: 18px;
+    }
+    .FoundersTitle{
+        font-size: 25px;
+    }
+    .NombreTxt{
+        font-size: 12px;
+        width: 150px;
+    }
+    .UnirseTitle{
+        font-size: 25px;
+
+    } 
+    .UnirseTxt {
+        font-size: 10px;
+    }
+    .btnDonar{
+        font-size: 10px;
+    }
 }

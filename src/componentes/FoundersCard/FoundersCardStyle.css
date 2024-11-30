@@ -23,3 +23,19 @@
     }
    
 }
+
+@media(max-width:450px){
+    
+    .FounderCardContainer{
+        width: 89px;
+    }
+    .ImageContainer{
+        width: 100%;
+        height: 50%;
+    }
+    .NombreTxt{
+        font-size: 12px;
+        width: 150px;
+    }
+   
+}
