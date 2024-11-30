@@ -124,6 +124,7 @@
     }
     .ContactContainer{
         display: block;
+        height: 90%;
     }
     .ContactLeftContainer{
         width: 100%;
