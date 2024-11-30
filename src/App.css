@@ -298,7 +298,7 @@ align-items: center;
   }
 
   
-  @media(max-width:375px){
+  @media(min-width:375px){
     .txtBienvenido{
         width: 300px;
         font-size: 22px;

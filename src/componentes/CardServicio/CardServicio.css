@@ -47,7 +47,7 @@
   }
 
 
-  @media (max-width: 375px){
+  @media (min-width: 375px){
 
   .CardServicioContainer{
     width: 110px;

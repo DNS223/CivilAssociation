@@ -16,7 +16,7 @@ img{
     }
    
 }
-@media(max-width:375px){
+@media(min-width:375px){
     .CardPrincipalContainer{
         width: 85px;
         height: 130px;

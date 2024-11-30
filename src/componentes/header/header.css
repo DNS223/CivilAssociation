@@ -31,7 +31,7 @@
     }
 }
 
-@media(max-width:375px){
+@media(min-width:375px){
     .linksContainer{
         & a{
             font-size: 17px;
