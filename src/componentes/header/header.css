@@ -30,3 +30,11 @@
         font-size: 22px;
     }
 }
+
+@media(max-width:375px){
+    .linksContainer{
+        & a{
+            font-size: 17px;
+        }
+    }
+}

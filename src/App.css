@@ -227,7 +227,14 @@ align-items: center;
     }
   }
 
-  
+  @media (max-width: 1440px) {
+    .txtBienvenido{
+        width: 850px;
+    }
+    .txtMain{
+        margin-top: 45px;
+    }
+  }
   @media (max-width: 1366px) {
     .txtBienvenido{
         width: 630px;
@@ -288,4 +295,61 @@ align-items: center;
     .ImgServicesL {
         width: 320px ;
     }
+  }
+
+  
+  @media(max-width:375px){
+    .txtBienvenido{
+        width: 300px;
+        font-size: 22px;
+    }
+    .containerRight{
+        width: 180px;
+    }
+    .btnDonarInicio{
+        width: 90px;
+        font-size: 15px;
+        height: 40px;
+        bottom:unset ;
+    } 
+    .parrafo{
+        width: 110px;
+    }
+    .ImgServicesL{
+        width: 140px;
+        height: 180px;
+    }
+    .CardServicioContainer{
+        width: 110px;
+        height: 190px;
+    }
+    .TitleSSContent {
+        font-size: 18px;
+    }
+    .footerContainer{
+        font-size: 10px;
+    }
+    .SubtitleSSContent{
+        width: 100%;
+        font-size: 14px;
+        margin: 0px;
+    }
+    .txtMain{
+        margin: 0;
+    }
+    .subtitle2Main{
+        font-size: 25px;
+    }
+    .SSContent{
+        align-items: flex-end;
+    }
+    .txtSS{
+        position: relative;
+        font-size: 14px;
+        width: 100%;
+    }
+    .TitleSS{
+        font-size: 38px;
+    }
+    
   }
