@@ -17,7 +17,7 @@ img{
     }
 }
 
-@media(min-width:375px){
+@media(max-width:450px){
 .CardSiguienteContainer{
     width: 75px;
     height: 95px;
