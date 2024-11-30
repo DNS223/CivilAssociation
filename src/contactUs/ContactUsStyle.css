@@ -117,7 +117,9 @@
 }
 
 @media(max-width:450px){
-
+    .ContactSectionContainer{
+        overflow-y: hidden;
+    }
     .logoForm{
         display: none;
        
