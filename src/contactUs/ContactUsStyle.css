@@ -116,7 +116,7 @@
 
 }
 
-@media(max-width:450px){
+@media(max-width:600px){
     .ContactSectionContainer{
         overflow-y: hidden;
     }
@@ -148,6 +148,7 @@
         
     }
     .firstInput {
+        width: 45%;
         height: 50px;
         margin-bottom: 2vh;
     }
