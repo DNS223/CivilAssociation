@@ -214,11 +214,12 @@
 }
 
 @media (max-width: 450px){
+    
     .FirstSectionBody{
         display: block;
     }
     .imgLogoAboutUs{
-        margin-top: 20px;
+        display: none;
     }
     .TtileSecondSecBod{
         font-size: 30px;
@@ -246,5 +247,17 @@
     }
     .btnDonar{
         font-size: 10px;
+    }
+}
+@media (max-width: 350px){
+    
+    .BodyAUS{
+        margin-top: 130px;
+    }
+    .FounderCardContainer {
+        width: 80px;
+    }
+    .UnirseTitle{
+        font-size: 20px;
     }
 }

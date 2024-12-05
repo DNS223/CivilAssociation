@@ -58,7 +58,7 @@
     justify-content: space-between;
 }
 .firstInput{
-    width: 400px;
+    width: 45%;
     height: 63px;
     
 }
@@ -89,9 +89,7 @@
 }
 @media(max-width:1366px){
 
-    .firstInput{
-        width: 300px;
-    } 
+
     .ohterInputs{
         margin-top: 20px;
     }
@@ -102,11 +100,9 @@
 
 }
 
-@media(max-width:720px){
+@media(max-width:1000px){
 
-    .firstInput{
-        width: 135px;
-    } 
+
    .inputContact{
     font-size: 22px;
    }
