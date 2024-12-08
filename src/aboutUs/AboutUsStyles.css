@@ -134,18 +134,20 @@
     align-items: center;
 }
 .UnirseTitle{
-    font-size: 64px;
+    font-size: 50px;
+    font-weight: 700;
     margin: 0;
     color: #95F9D8;
    
 }
 .UnirseTxt{
-    font-size: 40px;
+    font-size: 30px;
     color: #DAFFD6;
 
 }
 .btnDonar{
     background-color: #7ADFDB;
+    margin-bottom: 10px;
     border-radius: 37px;
     color: #020305;
     font-size: 28px;

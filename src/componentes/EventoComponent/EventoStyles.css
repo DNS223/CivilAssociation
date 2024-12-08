@@ -1,0 +1,104 @@
+.EventoContainer{
+    width: 10%;
+    min-width: 80px;
+    height: 80%;
+    border-radius: 16px;
+    background-color: rgb(11, 167, 156);
+    position: relative;
+    flex-grow: 1;
+    animation-duration: 1s;
+    animation-name: slideout;
+    cursor: pointer;
+}
+.EventoContainer:hover{
+    flex-grow: 8;
+    animation-duration: 2s;
+    animation-name: slidein;
+    & .imgEvento{
+        width: 30%;
+    } 
+    & .textCardEventoContainer{
+        display: block;
+    }
+    
+}
+@keyframes slidein {
+    from {
+      flex-grow: 1;
+    }
+  
+    to {
+        flex-grow: 8;
+    }
+  }
+@keyframes slideout {
+    from {
+      flex-grow: 8;
+    }
+  
+    to {
+        flex-grow: 1;
+    }
+  }
+.imgEvento{
+    width:100%;
+    height: 100%;
+}
+.filtro{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.493);
+    position: absolute;
+    top: 0;
+    border-radius: 16px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-between;
+    & svg{
+        color: black;
+        background-color: white;
+        border-radius: 50%;
+        padding: 3px;
+        cursor: pointer;
+    }
+    
+}
+.bottomContent{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 0px 20px 15px 10px;
+    width: 100%;
+}
+.tituloEvento{
+    color: white;
+    font-size: 1.3vw;
+    width: 50%;
+    margin: 0;
+    
+    & span{
+        width: 150%;
+        font-size: 1.5vw;
+        font-weight: 600;
+        display: block;
+    }
+}
+.textCardEventoContainer{
+    display: none;
+    position: absolute;
+    left: 35%;
+    top: 30px;
+    width: 55%;  
+    color: white;
+}
+.subTituloCardEvento{
+    font-weight: 700;
+    font-size: 22px;
+    margin: 0px 0px 10px 0px;
+}
+.txtCardEvento{
+    font-size: 18px;
+    margin: 0;
+    margin: 0px 0px 30px 0px;
+}

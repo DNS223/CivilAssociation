@@ -2,7 +2,7 @@
     background-color: #F3F4F6;
     width: 100vw;
     
-    padding: 0px 1.5vw 0px 1.5vw;
+    padding: 0px calc(1.5vw + 13px) 0px  1.5vw;
     box-sizing: border-box;
     position: absolute;
     box-sizing: border-box;
@@ -92,7 +92,7 @@
     
 }
 .ServiciosSection{
-    margin-bottom: 250px;
+    margin-bottom: 100px;
 }
 .FrstSS{
     display: flex;
@@ -194,6 +194,35 @@ align-items: center;
     animation-name: slideIn2;
     animation-duration: 0.8s;
 }
+.EventosSection{
+    width: 100%;
+    height: 600px;
+    margin-bottom: 100px;
+    
+    position: relative;
+    
+}
+.EventosTitulo{
+    width: 100%;
+    
+    text-align: center;
+    font-size: 50px;
+    color: RGB(0, 94, 88);
+    font-weight: 700;
+    margin: 0;
+    padding: 0;
+}
+.EventosContainer{
+    gap: 10px;
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 65px);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
 @keyframes slideout {
     from {
      right: 0;

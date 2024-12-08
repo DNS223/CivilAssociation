@@ -5,6 +5,7 @@ import { useEffect, useState } from 'react';
 import Footer from './componentes/footer/Footer';
 import CardServicio from './componentes/CardServicio/CardServicio';
 import ServiciosSection1 from './componentes/ServiciosSection/ServiciosSection1';
+import Evento from './componentes/EventoComponent/Evento';
 
 
 function App() {
@@ -56,7 +57,7 @@ function App() {
         <p className='txtSub'>{subTxtSlider[0]}</p>
         
         </div>
-        <a className='btnDonarInicio'>Donar ahora</a>
+        <a className='btnDonarInicio' href='/Contacto'>Donar ahora</a>
         <div className='containerRight'>
           <div className={animate ? "slideOut":'slideOut2'}>
             <CardPrincipal image={imagesSlider[caracterValue]}/>
@@ -94,6 +95,20 @@ function App() {
       SubtitleSSContent="Proporcionamos ayuda alimentaria a familias de escasos recursos, contribuyendo a mejorar su seguridad alimentaria."
       ContenidoPrincipal3={true} imgServiceSection="/ServiceDespensasImg.png"/>
       {/* Servicios end */}
+      
+      {/* Eventos start */}
+      <div className='EventosSection'>
+        <div className='EventosTitulo'>Eventos</div>
+        <div className='EventosContainer'>
+          <Evento imgUrl="/FotoEvento1.jpg" titulo1="Andadera" titulo2="a Beneficiencia"/>
+          <Evento imgUrl="/FotoEvento2.jpg" titulo1="Experiencia " titulo2="de entretenimiento"/>
+          <Evento imgUrl="/FotoEvento3.jpg" titulo1="Donación " titulo2="de pelotas"/>
+          <Evento imgUrl="/FotoEvento4.jpg" titulo1="Entrega " titulo2="de despensa"/>
+        </div>
+      
+      </div>
+        
+      {/* Eventos end */}
       <div className='footer'>
         <Footer/>
       </div>
