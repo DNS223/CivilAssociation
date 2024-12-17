@@ -1,7 +1,8 @@
-.EventoContainer{
+/* Estilos generales */
+.EventoContainer {
     width: 10%;
     min-width: 80px;
-    height: 80%;
+    height: 500px;
     border-radius: 16px;
     background-color: rgb(11, 167, 156);
     position: relative;
@@ -9,42 +10,47 @@
     animation-duration: 1s;
     animation-name: slideout;
     cursor: pointer;
+    transition: all 0.3s ease-in-out;
 }
-.EventoContainer:hover{
+
+.EventoContainer:hover {
     flex-grow: 8;
     animation-duration: 2s;
     animation-name: slidein;
-    & .imgEvento{
-        width: 30%;
-    } 
-    & .textCardEventoContainer{
-        display: block;
-    }
-    
 }
+
+.EventoContainer:hover .imgEvento {
+    width: 30%;
+}
+
+.EventoContainer:hover .textCardEventoContainer {
+    display: block;
+}
+
 @keyframes slidein {
     from {
-      flex-grow: 1;
+        flex-grow: 1;
     }
-  
     to {
         flex-grow: 8;
     }
-  }
+}
+
 @keyframes slideout {
     from {
-      flex-grow: 8;
+        flex-grow: 8;
     }
-  
     to {
         flex-grow: 1;
     }
-  }
-.imgEvento{
-    width:100%;
+}
+
+.imgEvento {
+    width: 100%;
     height: 100%;
 }
-.filtro{
+
+.filtro {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.493);
@@ -55,50 +61,120 @@
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-between;
-    & svg{
-        color: black;
-        background-color: white;
-        border-radius: 50%;
-        padding: 3px;
-        cursor: pointer;
-    }
-    
 }
-.bottomContent{
+
+.filtro svg {
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    padding: 3px;
+    cursor: pointer;
+}
+
+.bottomContent {
     display: flex;
     align-items: flex-end;
     justify-content: space-between;
     padding: 0px 20px 15px 10px;
     width: 100%;
 }
-.tituloEvento{
+
+.tituloEvento {
     color: white;
     font-size: 1.3vw;
     width: 50%;
     margin: 0;
-    
-    & span{
-        width: 150%;
-        font-size: 1.5vw;
-        font-weight: 600;
-        display: block;
-    }
 }
-.textCardEventoContainer{
+
+.tituloEvento span {
+    width: 150%;
+    font-size: 1.5vw;
+    font-weight: 600;
+    display: block;
+}
+
+.textCardEventoContainer {
     display: none;
     position: absolute;
     left: 35%;
     top: 30px;
-    width: 55%;  
+    width: 55%;
     color: white;
 }
-.subTituloCardEvento{
+
+.subTituloCardEvento {
     font-weight: 700;
     font-size: 22px;
     margin: 0px 0px 10px 0px;
 }
-.txtCardEvento{
+
+.txtCardEvento {
     font-size: 18px;
-    margin: 0;
     margin: 0px 0px 30px 0px;
 }
+
+/* Media Query para móviles */
+/* Media Query para móviles */
+@media (max-width: 768px) {
+    .EventosContainer {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: stretch; /* Fuerza misma altura */
+    }
+
+    .EventoContainer {
+        width: 100%;
+       
+        flex-grow: 1;
+    }
+
+    .imgEvento {
+        width: 100% !important;
+        height: 100%;
+        object-fit: cover; /* Asegura que la imagen llene el espacio sin deformarse */
+        border-radius: 16px;
+    }
+
+    .filtro {
+        
+        position: absolute;
+        background-color: rgba(0, 0, 0, 0.671);
+        border-radius: 16px;
+    }
+    .filtro:hover{
+        
+        & .textCardEventoContainer{
+            visibility: visible;
+        }
+    }
+    .tituloEvento {
+        font-size: 5vw;
+    }
+
+    .tituloEvento span {
+        font-size: 4.5vw;
+    }
+
+    .textCardEventoContainer {
+        display: block;
+        position: absolute;
+        width: 90%;
+        left: 10px;
+        top: 20px;
+        margin-left: 10px;
+        color: white;
+        visibility: hidden;
+    }
+
+    .subTituloCardEvento {
+        font-size: 16px;
+        
+    }
+
+    .txtCardEvento {
+        font-size: 14px;
+        
+    }
+}
+
