@@ -70,13 +70,13 @@ function App() {
       </div>
 
       <div className='second-section'>
-        <CardServicio image="./logoCard1.png" titulo="Nosotros" parrafo="Conoce nuestra misión y equipo"/>
-        <CardServicio image="./logoCard2.png" titulo="Servicios" parrafo="Descubre como podemos ayudarte"/>
-        <CardServicio image="./logoCard3.png" titulo="Eventos" parrafo="Participa en nuestras actividades"/>
+        <CardServicio image="./logoCard1.png" titulo="Nosotros" parrafo="Conoce nuestra misión y equipo" link="/AboutUs"/>
+        <CardServicio image="./logoCard2.png" titulo="Servicios" parrafo="Descubre como podemos ayudarte" link="#Servicios"/>
+        <CardServicio image="./logoCard3.png" titulo="Eventos" parrafo="Participa en nuestras actividades" link="#Eventos"/>
       </div>
       {/* Servicios begin */}
       <div className='FrstSS'>
-            <p className='TitleSS'>Nuestros Servicios</p>
+            <p className='TitleSS' id='Servicios'>Nuestros Servicios</p>
             <p className='txtSS'>En nuestra asociación, creemos firmemente que la inclusión es el camino hacia una sociedad 
               más justa y equitativa. Nos dedicamos a derribar barreras y a construir puentes que conecten 
               a todas las personas, sin importar sus circunstancias o antecedentes. Nuestros servicios están 
@@ -98,7 +98,7 @@ function App() {
       
       {/* Eventos start */}
       <div className='EventosSection'>
-        <div className='EventosTitulo'>Eventos</div>
+        <div className='EventosTitulo' id='Eventos'>Eventos</div>
         <div className='EventosContainer'>
           <Evento imgUrl="/FotoEvento1.jpg" titulo1="Andadera" titulo2="a Beneficiencia"/>
           <Evento imgUrl="/FotoEvento2.jpg" titulo1="Experiencia " titulo2="de entretenimiento"/>

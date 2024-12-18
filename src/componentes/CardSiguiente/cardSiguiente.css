@@ -10,6 +10,18 @@ img{
     border-radius: 20px;
     object-fit: cover;
 }
+@media(max-width:1024px){
+    .CardSiguienteContainer {
+        width: 140px ;
+        height: 170px ;
+    }
+}
+@media(max-width:768px){
+    .CardSiguienteContainer {
+        width: 100px;
+        height: 130px;
+    }
+}
 @media(max-width:720px){
     .CardSiguienteContainer {
         width: 100px ;
@@ -22,4 +34,8 @@ img{
     width: 75px;
     height: 95px;
 }
+img{
+    border-radius: 10px;
+}
+
 }

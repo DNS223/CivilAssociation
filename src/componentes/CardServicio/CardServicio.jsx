@@ -1,9 +1,9 @@
 import "./CardServicio.css"
-export default function CardServicio({image, titulo, parrafo}){
+export default function CardServicio({image, titulo, parrafo, link}){
     return(
         <div className="CardServicioContainer" >
             <img src={image} alt="" className="iconCard"/>
-            <p className="titulo">{titulo}</p>
+            <a className="titulo" href={link}>{titulo}</a>
             <p className="parrafo">{parrafo}</p>
         </div>
     )

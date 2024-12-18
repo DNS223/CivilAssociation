@@ -64,9 +64,9 @@ export default function AboutUs(){
             <div className='Founders'>
               <p className='FoundersTitle'>Nuestros Fundadores</p>
               <div className='FoundersCardContainer'>
-                <FounderCard/>
-                <FounderCard/>
-                <FounderCard/>
+                <FounderCard img="./FOUNDER1.jpg"/>
+                <FounderCard img="./FOUNDER2.jpg"/>
+                <FounderCard img="./FOUNDER3.jpg"/>
               </div>
             </div>
 

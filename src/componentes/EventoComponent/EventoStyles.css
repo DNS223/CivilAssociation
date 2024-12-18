@@ -120,11 +120,12 @@
         display: flex;
         flex-direction: column;
         gap: 20px;
-        align-items: stretch; /* Fuerza misma altura */
+        align-items: center; /* Fuerza misma altura */
+        justify-content: center;
     }
 
     .EventoContainer {
-        width: 100%;
+        width: 90%;
        
         flex-grow: 1;
     }

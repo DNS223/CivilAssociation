@@ -305,7 +305,40 @@ align-items: center;
     }
   }
  
-
+  @media(max-width:1024px){
+    .containerRight{
+        width: 350px;
+    }
+    @keyframes slideIn {
+        from {
+         width: 140px ;
+        height: 170px ;
+         right: 0;
+        }
+        to {
+         width: 170px ;
+        height: 230px ;
+         right: 175px ;
+        }
+      }
+  }
+  @media(max-width:768px){
+    .containerRight{
+        width: 250px;
+    }
+    @keyframes slideIn {
+        from {
+         width: 100px;
+        height: 130px;
+         right: 0;
+        }
+        to {
+        width: 120px;
+        height: 170px;
+         right: 125px ;
+        }
+      }
+  }
   @media(max-width:720px){
     .App{
         width: 100vw;
@@ -328,6 +361,18 @@ align-items: center;
 
   
   @media(max-width:450px){
+    @keyframes slideIn {
+        from {
+        width: 75px;
+        height: 95px;
+         right: 0;
+        }
+        to {
+        width: 85px;
+        height: 130px;
+         right: 90px ;
+        }
+      }
     .txtBienvenido{
         width: 300px;
         font-size: 22px;
@@ -340,6 +385,7 @@ align-items: center;
         font-size: 15px;
         height: 40px;
         bottom:unset ;
+        text-decoration: none;
     } 
     .parrafo{
         width: 110px;
