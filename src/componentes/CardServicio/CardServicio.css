@@ -24,6 +24,7 @@ a{
     font-weight: 500;
     font-size: 26px;
     margin: 0;
+    cursor: pointer;
 }
 .parrafo{
     font-size: 20px;
